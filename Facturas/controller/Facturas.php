@@ -11,8 +11,8 @@
     header('Access-Control-Allow-Origin: *');  
     header('Content-Type: application/json');
 
-    require_once("../Config/conexion.php");
-    require_once("../Facturas/Models/facturas.php");
+    require_once("../../Config/conexion.php");
+    require_once("../../Facturas/Models/facturas.php");
     $facturas = new Facturas();
 
     $body = json_decode(file_get_contents("php://input"), true);
