@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 header('Access-Control-Allow-Origin: *'); 
 header('Content-Type: application/json');
 
-    require_once("../config/conexion.php");
-    require_once("../models/Socios.php");
+    require_once("../../config/conexion.php");
+    require_once("../../SociosNegocio/models/Socios.php");
     $socios = new Socios();
 
     $body = json_decode(file_get_contents("php://input"), true);
